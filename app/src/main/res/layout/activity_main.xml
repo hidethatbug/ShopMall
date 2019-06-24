@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frame_main"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/rgroup_main"
+        android:gravity="center"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <RadioButton
+            android:gravity="center"
+            android:text="主页"
+            android:button="@null"
+            android:id="@+id/radiobut_home"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:gravity="center"
+            android:text="圈子"
+            android:button="@null"
+            android:id="@+id/radiobut_circle"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:gravity="center"
+            android:text="购物车"
+            android:button="@null"
+            android:id="@+id/radiobut_buycar"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:gravity="center"
+            android:text="订单"
+            android:button="@null"
+            android:id="@+id/radiobut_indent"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:gravity="center"
+            android:text="我的"
+            android:button="@null"
+            android:id="@+id/radiobut_my"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</LinearLayout>
